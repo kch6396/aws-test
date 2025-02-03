@@ -29,6 +29,6 @@ jobs:
       
     - name: Build, tag, and push image to Amazon ECR
       run: |
-	docker build -t test/test-repo .
-	docker tag test/test-repo:latest 329599624127.dkr.ecr.ap-northeast-2.amazonaws.com/test/test-repo:latest
+        docker build -t test/test-repo .
+        docker tag test/test-repo:latest 329599624127.dkr.ecr.ap-northeast-2.amazonaws.com/test/test-repo:latest
         docker push 329599624127.dkr.ecr.ap-northeast-2.amazonaws.com/test/test-repo:latest
